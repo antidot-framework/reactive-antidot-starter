@@ -1,5 +1,6 @@
 {
-  "name": "antidot-fw/antidot-framework-starter",
+  "name": "antidot-fw/reactive-starter",
+  "description": "Reactive Antidot Framework Apllication Starter",
   "type": "project",
   "license": "BSD-2-Clause",
   "authors": [
