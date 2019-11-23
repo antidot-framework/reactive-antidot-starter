@@ -11,4 +11,5 @@
 !/var/log/.gitkeep
 
 /.idea
+/*.iml
 /.phpunit.result.cache
