@@ -1,7 +1,10 @@
-Antidot Framework
+Reactive Antidot Framework
 =================
 
-This framework is based on concepts and components of other open source software, especially [Zend Expressive](https://docs.zendframework.com/zend-expressive/) and [Zend Stratigillity](https://docs.zendframework.com/zend-stratigility/).
+This framework is based on concepts and components of other open source software, especially 
+[Zend Expressive](https://docs.zendframework.com/zend-expressive/), 
+[Zend Stratigillity](https://docs.zendframework.com/zend-stratigility/), 
+[Recoil](https://github.com/recoilphp/recoil) and [React PHP](https://reactphp.org/).
 
 ## Installation
 
@@ -10,10 +13,18 @@ Install a project using [composer](https://getcomposer.org/download/) package ma
 ````bash
 composer create-project antidot-fw/antidot-framework-starter:dev-master dev
 mv dev/.* dev/* ./ && rmdir dev
-php -S 127.0.0.1:8000 -t public
+bin/console react-server:http
 ````
 
-To run it in dev mode, rename `config/services/dependencies.dev.yaml.dist` to `config/services/dependencies.dev.yaml`
+### Development Mode
+
+To run it in dev mode you can run `config:development-mode` command
+
+````bash
+bin/console config:development-mode
+````
+
+Or you can do it by hand renaming from `config/services/dependencies.dev.yaml.dist` to `config/services/dependencies.dev.yaml`
 
 ````bash
 mv config/services/dependencies.dev.yaml.dist config/services/dependencies.dev.yaml
