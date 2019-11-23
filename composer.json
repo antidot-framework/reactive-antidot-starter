@@ -11,12 +11,21 @@
     {
       "type": "vcs",
       "url": "https://github.com/kpicaza/psr11-monolog.git"
+    },
+    {
+      "type": "path",
+      "url": "modules/antidot-react-psr15"
+    },
+    {
+      "type": "path",
+      "url": "modules/antidot-react-http"
     }
   ],
   "require": {
     "php": "^7.2.13",
     "ext-json": "*",
     "antidot-fw/antidot-react-http": "dev-master",
+    "antidot-fw/antidot-react-psr15": "dev-master",
     "antidot-fw/aura-router-adapter": "dev-master",
     "antidot-fw/cli": "^1.0.0",
     "antidot-fw/container": "0.0.2",
@@ -79,7 +88,8 @@
         "antidot-fw/symfony-config-translator",
         "wshafer/psr11-monolog",
         "zendframework/zend-httphandlerrunner",
-        "antidot-fw/antidot-react-http"
+        "antidot-fw/antidot-react-http",
+        "antidot-fw/antidot-react-psr15"
       ]
     }
   }
