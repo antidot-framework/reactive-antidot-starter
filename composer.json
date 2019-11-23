@@ -12,14 +12,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/kpicaza/psr11-monolog.git"
-    },
-    {
-      "type": "path",
-      "url": "modules/antidot-react-psr15"
-    },
-    {
-      "type": "path",
-      "url": "modules/antidot-react-http"
     }
   ],
   "require": {
