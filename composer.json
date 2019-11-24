@@ -15,16 +15,16 @@
     }
   ],
   "require": {
-    "php": "^7.2.13",
+    "php": "^7.3",
     "ext-json": "*",
     "antidot-fw/antidot-react-http": "dev-master",
     "antidot-fw/antidot-react-psr15": "dev-master",
-    "antidot-fw/aura-router-adapter": "dev-master",
+    "antidot-fw/fast-router-adapter": "dev-master",
     "antidot-fw/cli": "^1.0.0",
-    "antidot-fw/container": "0.0.2",
+    "antidot-fw/container": "^0.0.2",
     "antidot-fw/dev-tools": "dev-master",
     "antidot-fw/event-dispatcher": "^1.1.0",
-    "antidot-fw/framework": "dev-master",
+    "antidot-fw/framework": "^0.0.2",
     "antidot-fw/logger": "^1.0.1",
     "antidot-fw/symfony-config-translator": "^1.0.0",
     "antidot-fw/yaml-config-provider": "dev-master",
@@ -32,6 +32,7 @@
     "wshafer/psr11-monolog": "@dev"
   },
   "require-dev": {
+    "blackfire/php-sdk": "^1.20",
     "franzl/whoops-middleware": "^1.1",
     "phpro/grumphp": "^0.15.0",
     "phpstan/phpstan": "^0.11.5",
