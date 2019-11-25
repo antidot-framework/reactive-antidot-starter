@@ -49,7 +49,3 @@ bin/console
 ````
 
 ![Default console tool](https://getting-started.antidotfw.io/images/default-console.jpg)
-
-#### Disclaimer: 
-
-* This framework is created for educational purposes. The full or partial use of this software is the responsibility of the user.
