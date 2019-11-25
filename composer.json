@@ -38,6 +38,7 @@
     "phpstan/phpstan": "^0.11.5",
     "phpunit/phpunit": "^8.0",
     "roave/security-advisories": "dev-master",
+    "seregazhuk/php-watcher": "^0.5.1",
     "squizlabs/php_codesniffer": "^3.4",
     "symfony/var-dumper": "^4.2",
     "zendframework/zend-component-installer": "^2.1"
@@ -61,7 +62,8 @@
     "cs-check": "phpcs src --colors",
     "cs-fix": "phpcbf src --colors",
     "inspect": "phpstan analyse src -l7 --ansi",
-    "test": "phpunit --colors=always"
+    "test": "phpunit --colors=always",
+    "watch": "php-watcher bin/console --arguments react-server:http --delay 5 --ansi"
   },
   "config": {
     "sort-packages": true

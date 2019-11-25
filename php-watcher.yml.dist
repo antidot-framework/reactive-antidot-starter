@@ -1,0 +1,8 @@
+watch:
+  - src
+  - config
+extensions:
+  - php
+  - yml
+ignore:
+  - tests

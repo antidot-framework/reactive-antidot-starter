@@ -16,6 +16,8 @@ mv dev/.* dev/* ./ && rmdir dev
 bin/console react-server:http
 ````
 
+Open your browser on port `8080`
+
 ### Development Mode
 
 To run it in dev mode you can run `config:development-mode` command
@@ -28,6 +30,14 @@ Or you can do it by hand renaming from `config/services/dependencies.dev.yaml.di
 
 ````bash
 mv config/services/dependencies.dev.yaml.dist config/services/dependencies.dev.yaml
+````
+
+### Hot Code Reloading
+
+You can use [Php whatcher](https://github.com/seregazhuk/php-watcher) with composer for more friendly development.
+
+````bash
+composer watch
 ````
 
 ![Default homepage](https://getting-started.antidotfw.io/images/default-homepage.jpg)
