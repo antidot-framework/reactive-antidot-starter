@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
+use Antidot\DevTools\Container\Config\ConfigProvider as DevToolsConfigProvider;
 use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
 use Antidot\Yaml\YamlConfigProvider;
-use Zend\ConfigAggregator\ArrayProvider;
-use Zend\ConfigAggregator\PhpFileProvider;
+use Laminas\ConfigAggregator\ArrayProvider;
+use Laminas\ConfigAggregator\PhpFileProvider;
 
 // To enable or disable caching, set the `ConfigAggregator::ENABLE_CACHE` boolean in
 // `config/autoload/local.php`.
@@ -14,7 +15,16 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    \WShafer\PSR11MonoLog\ConfigProvider::class,
+    \Antidot\Event\Container\Config\ConfigProvider::class,
+    \Antidot\Logger\Container\Config\ConfigProvider::class,
+    \Antidot\Cli\Container\Config\ConfigProvider::class,
+    \Antidot\Fast\Router\Container\Config\ConfigProvider::class,
+    \Antidot\React\PSR15\Container\Config\ConfigProvider::class,
+    \Antidot\Container\Config\ConfigProvider::class,
+    \Laminas\HttpHandlerRunner\ConfigProvider::class,
     \Antidot\React\Container\Config\ConfigProvider::class,
+    class_exists(DevToolsConfigProvider::class) ? DevToolsConfigProvider::class : fn() => [],
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
     //   - `*.php`

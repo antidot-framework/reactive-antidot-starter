@@ -2,17 +2,20 @@
 
 declare(strict_types=1);
 
-use Zend\ConfigAggregator\ArrayProvider;
-use Zend\ConfigAggregator\ConfigAggregator;
+use Antidot\SymfonyConfigTranslator\Container\Config\ConfigAggregator;
+use Laminas\ConfigAggregator\ArrayProvider;
 
 $config = require __DIR__ . '/config.php';
-$cliConfig['dependencies'] = $config['console']['dependencies'];
+$cliConfig['services'] = $config['console']['services'] ?? [];
+$cliConfig['factories'] = $config['console']['factories'] ?? [];
 $cacheConfig = [
     'cli_config_cache_path' => 'var/cache/cli-config-cache.php',
 ];
 
-return (new ConfigAggregator([
-    new ArrayProvider($config),
-    new ArrayProvider($cliConfig),
-    new ArrayProvider($cacheConfig),
-], $cacheConfig['cli_config_cache_path']))->getMergedConfig();
+return (new ConfigAggregator(
+    [
+        new ArrayProvider($config),
+        new ArrayProvider($cliConfig),
+        new ArrayProvider($cacheConfig),
+    ], $cacheConfig['cli_config_cache_path']
+))->getMergedConfig();

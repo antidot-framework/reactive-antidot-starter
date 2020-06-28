@@ -19,29 +19,29 @@
     "ext-json": "*",
     "antidot-fw/antidot-react-http": "dev-master",
     "antidot-fw/antidot-react-psr15": "dev-master",
-    "antidot-fw/fast-router-adapter": "dev-master",
-    "antidot-fw/cli": "^1.0.0",
-    "antidot-fw/container": "^0.0.2",
-    "antidot-fw/dev-tools": "dev-master",
-    "antidot-fw/event-dispatcher": "^1.1.0",
-    "antidot-fw/framework": "^0.0.2",
-    "antidot-fw/logger": "^1.0.1",
-    "antidot-fw/symfony-config-translator": "^1.0.0",
-    "antidot-fw/yaml-config-provider": "dev-master",
-    "symfony/yaml": "^4.2.7",
-    "wshafer/psr11-monolog": "@dev"
+    "antidot-fw/fast-router-adapter": "^0.1.0",
+    "antidot-fw/cli": "^1.1.0",
+    "antidot-fw/container": "^0.1.0",
+    "antidot-fw/dev-tools": "^0.1.2",
+    "antidot-fw/event-dispatcher": "^1.1.1",
+    "antidot-fw/framework": "^0.1.1",
+    "antidot-fw/logger": "^1.1.0",
+    "antidot-fw/symfony-config-translator": "^1.1.0",
+    "antidot-fw/yaml-config-provider": "^0.1.0",
+    "webmozart/assert": "^1.7.0",
+    "wshafer/psr11-monolog": "^3.0.0"
   },
   "require-dev": {
     "blackfire/php-sdk": "^1.20",
     "franzl/whoops-middleware": "^1.1",
-    "phpro/grumphp": "^0.15.0",
+    "phpro/grumphp": "0.17.2",
     "phpstan/phpstan": "^0.11.5",
     "phpunit/phpunit": "^8.0",
     "roave/security-advisories": "dev-master",
     "seregazhuk/php-watcher": "^0.5.1",
     "squizlabs/php_codesniffer": "^3.4",
     "symfony/var-dumper": "^4.2",
-    "zendframework/zend-component-installer": "^2.1"
+    "laminas/laminas-component-installer": "^2.1.2"
   },
   "autoload": {
     "psr-4": {
@@ -83,7 +83,7 @@
         "antidot-fw/event-dispatcher",
         "antidot-fw/symfony-config-translator",
         "wshafer/psr11-monolog",
-        "zendframework/zend-httphandlerrunner",
+        "laminias/laminas-httphandlerrunner",
         "antidot-fw/antidot-react-http",
         "antidot-fw/antidot-react-psr15"
       ]

@@ -10,13 +10,13 @@ use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use React\Promise\FulfilledPromise;
 use Zend\Diactoros\Response\JsonResponse;
+
+use function React\Promise\resolve;
 
 class HomePage implements RequestHandlerInterface
 {
-    /** @var EventDispatcherInterface */
-    private $eventDispatcher;
+    private EventDispatcherInterface $eventDispatcher;
 
     public function __construct(EventDispatcherInterface $eventDispatcher)
     {
@@ -25,15 +25,14 @@ class HomePage implements RequestHandlerInterface
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        $promise = new FulfilledPromise($request);
-
+        $eventDispatcher = $this->eventDispatcher;
         return new PromiseResponse(
-            $promise
-                ->then(function (ServerRequestInterface $request) {
-                    $this->eventDispatcher->dispatch(SomeEvent::occur());
+            resolve($request)
+                ->then(static function (ServerRequestInterface $request) use ($eventDispatcher) {
+                    $eventDispatcher->dispatch(SomeEvent::occur());
                     return $request;
                 })
-                ->then(function (ServerRequestInterface $request) {
+                ->then(static function (ServerRequestInterface $request) {
                     return new JsonResponse([
                         'docs' => 'https://antidotfw.io',
                         'message' => $request->getAttribute('foo') . ' Welcome to Antidot Framework Starter',
