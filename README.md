@@ -11,7 +11,7 @@ This framework is based on concepts and components of other open source software
 Install a project using [composer](https://getcomposer.org/download/) package manager:
 
 ````bash
-composer create-project antidot-fw/antidot-framework-starter:dev-master dev
+composer create-project antidot-fw/reactive-starter:dev-master dev
 mv dev/.* dev/* ./ && rmdir dev
 bin/console react-server:http
 ````
