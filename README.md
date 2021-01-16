@@ -1,6 +1,8 @@
 Reactive Antidot Framework
 =================
 
+[![link-packagist](https://img.shields.io/packagist/v/antidot-fw/reactive-starter.svg?style=flat-square)](https://packagist.org/packages/antidot-fw/reactive-starter)
+
 This framework is based on concepts and components of other open source software, especially 
 [Zend Expressive](https://docs.zendframework.com/zend-expressive/), 
 [Zend Stratigillity](https://docs.zendframework.com/zend-stratigility/), 
