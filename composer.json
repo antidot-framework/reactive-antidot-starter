@@ -29,12 +29,12 @@
     "antidot-fw/symfony-config-translator": "^1.1.0",
     "antidot-fw/yaml-config-provider": "^0.1.0",
     "webmozart/assert": "^1.7.0",
-    "wshafer/psr11-monolog": "^3.0.0"
+    "wshafer/psr11-monolog": "^3.0.0|@dev"
   },
   "require-dev": {
     "blackfire/php-sdk": "^1.20",
     "franzl/whoops-middleware": "^1.1",
-    "phpro/grumphp": "0.17.2",
+    "phpro/grumphp": "^1.0",
     "phpstan/phpstan": "^0.11.5",
     "phpunit/phpunit": "^8.0",
     "roave/security-advisories": "dev-master",
