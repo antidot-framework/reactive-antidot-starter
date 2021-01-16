@@ -61,7 +61,7 @@
     "cs-fix": "phpcbf src --colors",
     "inspect": "phpstan analyse src -l7 --ansi",
     "test": "phpunit --colors=always",
-    "watch": "php-watcher bin/console --arguments react-server:http --delay 5 --ansi"
+    "watch": "php-watcher public/index.php --arguments  --delay 5 --ansi"
   },
   "config": {
     "sort-packages": true
