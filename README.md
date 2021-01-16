@@ -38,6 +38,10 @@ mv config/services/dependencies.dev.yaml.dist config/services/dependencies.dev.y
 
 ### Hot Code Reloading
 
+```bash
+composer require seregazhuk/php-watcher --dev
+```
+
 You can use [Php whatcher](https://github.com/seregazhuk/php-watcher) with composer for more friendly development.
 
 ````bash
