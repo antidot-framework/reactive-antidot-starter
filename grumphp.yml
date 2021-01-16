@@ -6,3 +6,4 @@ grumphp:
             script: check-all
             triggered_by: [php, phtml]
             working_directory: ~
+

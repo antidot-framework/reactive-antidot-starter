@@ -1,5 +1,6 @@
 services:
   App\Application\Http\Handler\HomePage:
+  App\Application\Http\Middleware\HelloWorld:
 #  App\Application\Http\Handler\SomeTestClass:
 #    arguments:
 #      $dispatcher: '@another.dispatcher'

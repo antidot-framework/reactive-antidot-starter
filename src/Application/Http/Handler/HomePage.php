@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Application\Http\Handler;
 
-use Antidot\React\PSR15\Response\PromiseResponse;
+use Antidot\React\PromiseResponse;
 use App\Application\Event\SomeEvent;
+use Laminas\Diactoros\Response\JsonResponse;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Zend\Diactoros\Response\JsonResponse;
 
 use function React\Promise\resolve;
 
@@ -35,7 +35,10 @@ class HomePage implements RequestHandlerInterface
                 ->then(static function (ServerRequestInterface $request) {
                     return new JsonResponse([
                         'docs' => 'https://antidotfw.io',
-                        'message' => $request->getAttribute('foo') . ' Welcome to Antidot Framework Starter',
+                        'message' => sprintf(
+                            'Hello %s!!!! Welcome to Antidot Framework Starter',
+                            $request->getAttribute('greet')
+                        )
                     ]);
                 })
         );
