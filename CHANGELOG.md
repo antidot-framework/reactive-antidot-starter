@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.0.0](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.0)
+## [1.0.1](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.1)
+
+[Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.0...1.0.1)
+
+**Fixed bugs:**
+
+- fix repo vcs and php8 compatibility [\#10](https://github.com/antidot-framework/reactive-antidot-starter/pull/10) ([kpicaza](https://github.com/kpicaza))
+
+## [1.0.0](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.0) (2021-01-16)
 
 [Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/168c585eab601aeb68274f9c20f0a84cf7c6bced...1.0.0)
 
