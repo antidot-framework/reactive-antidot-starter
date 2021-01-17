@@ -22,6 +22,20 @@ Open your browser on port `8080`
 
 ## Config
 
+### Server Config
+
+Default config
+
+```yaml
+parameters:
+    server:
+      host: '0.0.0.0'
+      port: '8080'
+      max_concurrency: 100
+      buffer_size: 4194304
+
+```
+
 ### Development Mode
 
 To run it in dev mode you can run `config:development-mode` command
