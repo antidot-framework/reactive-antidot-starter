@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.0.1](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.1)
+## [1.0.2](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.2)
+
+[Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.1...1.0.2)
+
+**Implemented enhancements:**
+
+- add configurable server [\#11](https://github.com/antidot-framework/reactive-antidot-starter/pull/11) ([kpicaza](https://github.com/kpicaza))
+
+## [1.0.1](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.1) (2021-01-16)
 
 [Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.0...1.0.1)
 
