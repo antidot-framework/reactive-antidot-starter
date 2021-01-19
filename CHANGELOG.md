@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.0.2](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.2)
+## [1.0.3](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.3)
+
+[Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.2...1.0.3)
+
+**Implemented enhancements:**
+
+- fix routes help comment [\#12](https://github.com/antidot-framework/reactive-antidot-starter/pull/12) ([kpicaza](https://github.com/kpicaza))
+
+## [1.0.2](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.2) (2021-01-17)
 
 [Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.1...1.0.2)
 
