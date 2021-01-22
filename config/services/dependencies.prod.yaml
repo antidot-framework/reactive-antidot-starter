@@ -26,3 +26,6 @@ parameters:
         options:
           stream: 'var/log/%date%-default.log'
           level: 400
+  server:
+    max_concurrency: 2048
+    workers: 16
