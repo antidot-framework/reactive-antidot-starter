@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.0.3](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.3)
+## [1.1.0](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.0)
+
+[Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.3...1.1.0)
+
+**Implemented enhancements:**
+
+- Test antiodot-fw/react-framework version 1.1.0 [\#13](https://github.com/antidot-framework/reactive-antidot-starter/pull/13) ([kpicaza](https://github.com/kpicaza))
+
+## [1.0.3](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.3) (2021-01-19)
 
 [Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.2...1.0.3)
 
