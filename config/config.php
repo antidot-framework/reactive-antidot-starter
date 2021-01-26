@@ -15,6 +15,7 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
+    \Antidot\React\PSR15\Container\Config\ConfigProvider::class,
     \WShafer\PSR11MonoLog\ConfigProvider::class,
     \Antidot\Event\Container\Config\ConfigProvider::class,
     \Antidot\Logger\Container\Config\ConfigProvider::class,
