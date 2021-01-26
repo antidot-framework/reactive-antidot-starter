@@ -33,6 +33,7 @@ parameters:
       port: '8080'
       max_concurrency: 100
       buffer_size: 4194304
+      workers: 4
 
 ```
 
@@ -176,7 +177,7 @@ class SomeMiddleware implements RequestHandlerInterface
 
 ## Benchmark
 
-Using apache ab:
+Using apache ab with single thread:
 
 ```bash
 > ab -n 40000 -c 64 http://127.0.0.1:8080/ 
@@ -237,3 +238,5 @@ Running 15s test @ http://127.0.0.1:8080/
 Requests/sec:   2437.45
 Transfer/sec:    578.42KB
 ```
+
+See ranking in [The Benchmarker - Web Framework](https://github.com/the-benchmarker/web-frameworks) project.
