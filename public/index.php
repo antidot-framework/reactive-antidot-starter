@@ -12,7 +12,7 @@ use React\Socket\Server as Socket;
 
 require 'vendor/autoload.php';
 
-call_user_func(static function () {
+(static function () {
     $container = require 'config/container.php';
     $application = $container->get(Application::class);
     (require 'router/middleware.php')($application, $container);
@@ -40,4 +40,4 @@ call_user_func(static function () {
 
 
     $loop->run();
-});
+})();
