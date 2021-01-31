@@ -1,12 +1,20 @@
 # Changelog
 
-## [1.1.0](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.0)
+## [1.1.1](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.1)
+
+[Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.1.0...1.1.1)
+
+**Implemented enhancements:**
+
+- replace call\_user\_func by annon function [\#14](https://github.com/antidot-framework/reactive-antidot-starter/pull/14) ([kpicaza](https://github.com/kpicaza))
+
+## [1.1.0](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.0) (2021-01-26)
 
 [Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.0.3...1.1.0)
 
 **Implemented enhancements:**
 
-- Test antiodot-fw/react-framework version 1.1.0 [\#13](https://github.com/antidot-framework/reactive-antidot-starter/pull/13) ([kpicaza](https://github.com/kpicaza))
+- Test fork [\#13](https://github.com/antidot-framework/reactive-antidot-starter/pull/13) ([kpicaza](https://github.com/kpicaza))
 
 ## [1.0.3](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.0.3) (2021-01-19)
 
