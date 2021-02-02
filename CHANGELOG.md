@@ -1,6 +1,14 @@
 # Changelog
 
-## [1.1.1](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.1)
+## [1.1.2](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.2)
+
+[Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.1.1...1.1.2)
+
+**Merged pull requests:**
+
+- add drift server [\#15](https://github.com/antidot-framework/reactive-antidot-starter/pull/15) ([kpicaza](https://github.com/kpicaza))
+
+## [1.1.1](https://github.com/antidot-framework/reactive-antidot-starter/tree/1.1.1) (2021-01-31)
 
 [Full Changelog](https://github.com/antidot-framework/reactive-antidot-starter/compare/1.1.0...1.1.1)
 
