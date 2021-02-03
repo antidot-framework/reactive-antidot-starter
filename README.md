@@ -15,10 +15,10 @@ Install a project using [composer](https://getcomposer.org/download/) package ma
 ````bash
 composer create-project antidot-fw/reactive-starter dev
 mv dev/.* dev/* ./ && rmdir dev
-php public/index.php
+bin/console server:run
 ````
 
-Open your browser on port `8080`
+Open your browser localhost on port `5555` and you will see the [DriftPHP Server](https://github.com/driftphp/server) up and running.
 
 ## Config
 
@@ -30,9 +30,9 @@ Default config
 parameters:
     server:
       host: '0.0.0.0'
-      port: '8080'
+      port: '5555'
       max_concurrency: 100
-      buffer_size: 4194304
+      buffer_size: 4096
       workers: 4
 
 ```
@@ -60,7 +60,7 @@ composer require seregazhuk/php-watcher --dev
 You can use [Php whatcher](https://github.com/seregazhuk/php-watcher) with composer for more friendly development.
 
 ````bash
-composer watch
+bin/console server:watch
 ````
 
 ![Default homepage](https://getting-started.antidotfw.io/images/default-homepage.jpg)
