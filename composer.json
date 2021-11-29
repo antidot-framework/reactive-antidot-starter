@@ -19,7 +19,7 @@
     "ext-json": "*",
     "antidot-fw/react-framework": "^1.1.1",
     "antidot-fw/antidot-react-psr15": "^0.0.1",
-    "antidot-fw/fast-router-adapter": "^0.2.0",
+    "antidot-fw/fast-router-adapter": "^1.0.0",
     "antidot-fw/cli": "^1.1.0",
     "antidot-fw/container": "^0.1.0",
     "antidot-fw/dev-tools": "^0.1.2",
